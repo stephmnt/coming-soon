@@ -1,0 +1,40 @@
+/* GLOBAL STYLES */
+
+body {
+
+	background:url('bg.jpg'); /* http://template.simkors.itembridge.com/images/background/slide-1.jpg */
+	background-size: 100%;
+}
+.console {
+background: rgba(0, 0, 0, 0.5);
+color:white;
+font-family: 'Space Mono', monospace;opacity:1;
+}
+#bash > .ti-cursor {color:red!important;} /*
+#bash > .ti-container {color:white!important;}
+#bash {font-family: 'Space Mono', monospace;opacity:1;} */
+
+.console {
+display: block;
+margin: auto;
+max-width: 530px;
+border-radius: 10px;
+box-shadow: rgba(0, 0, 0, 0.8) 0px 20px 70px;
+clear: both;
+overflow: hidden;
+}
+
+.title-bar {
+    padding: 5px 0;
+    font-family: "Lucida Grande", sans-serif;
+    font-size: 0.75em;
+    text-align: center;
+    text-shadow: rgba(255, 255, 255, 0.8) 0px 1px 0px;
+    background-color: #f8f8f8;
+    background-image: -webkit-linear-gradient(top, #e8e8e8, #bcbbbc);
+    background-image: -moz-linear-gradient(top, #e8e8e8, #bcbbbc);
+    background-image: linear-gradient(top, #e8e8e8, #bcbbbc);
+    box-shadow: inset rgba(255, 255, 255, 0.7) 0px 1px 1px;
+    border-bottom: #6a6a6a 1px solid;
+}
+

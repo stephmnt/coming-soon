@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Stéphane Manet</title>
+	<meta name="title" content="Stéphane Manet" />
+	<meta name="description" content="Create a Full Page, Fully CSS3 Animated Menu for your Navigation with Full Page Menu" />
+<link href="https://fonts.googleapis.com/css?family=Space+Mono|Roboto" rel="stylesheet"> 
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
+<link href="style.css" rel="stylesheet"> 
+<link href="http://www.thepetedesign.com/demos/fullpage-menu/fullpage-menu.css" rel="stylesheet"> 
+ <script type="text/javascript" src="jquery.fullpage-menu.min.js"></script>
+</head>
+<body>
+  <div class="sidemenu">
+    <ul class="fm-first-level">
+      <li><a href="#menu1">..</a></li>
+      
+    </ul>
+    <nav id="menu1" class="active">
+      <a target="_blank" href="#">
+        <span class="subtitle">...</span>
+        
+      </a>
+      
+    </nav>
+</div>
+<div class="console">
+<div class="title-bar">Stéphane Manet - bash</div>
+	<span class="">$ a-propos</span><p id="bash"></p>
+</div>
+
+<a id="click-me" class="btn-normal btn" href="#">Show Me!</a>
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.js"
+	integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+	crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script> 
+
+<script>
+$(document).ready( function() {
+	$(".sidemenu").fullpageMenu({
+	   openButton: "Menu", // This option allows you to define the content of the open menu button. The default value is "Menu"
+	   closeButton: "Close X", // This option allows you to define the content of the close menu button. The default value is "Close X"
+	   animationSpeed: 100, // This option lets you control the speed of the animation of each navigation items. The option accepts milliseconds. The default value is 100.
+	   autoNumber: true, // This option lets you enable/disable to automatic numbering on menu items. The default value is true.
+	   animation: "fadeInLeft" // This option lets you define what type of animation you want. Available options are "fadeInLeft", "fadeInRight", "fadeInUp" and "fadeInDown". 
+	 });  
+	$("#click-me").click(function() {
+		$(".sidemenu").openMenu();
+		return false;
+	});
+});
+
+$('#bash').typeIt({
+     strings: ["--formation-professionnelle", "developpement-web"],
+     speed: 100,
+lifeLike: true,
+     autoStart: false,
+breakLines: false,
+	loop: true
+});
+
+		
+	</script>
+<a href="https://www.flickr.com/photos/jdominiq/14799338351/" target="_blank">photo</a><br />
+<a href="https://www.flickr.com/search/?text=observatory&dimension_search_mode=min&height=1024&width=1024&orientation=landscape%2Cpanorama&media=photos&license=2%2C3%2C4%2C5%2C6%2C9/" target="_blank">photo</a><br />
+<i class="fa fa-github"></i> Scripts utilisés <a href="https://github.com/alexmacarthur/typeit" target="_blank">typeIt.js</a> et <a href="" target="_blank">particules.js</a>
+</body>
+</html>
