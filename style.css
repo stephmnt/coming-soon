@@ -1,50 +1,98 @@
+/* =============================================================================
+   HTML5 CSS Reset Minified - Eric Meyer
+   ========================================================================== */
+
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+li{list-style:none}
+
 /* GLOBAL STYLES */
 
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+
+}
+
 body {
-
 	background:url('bg.jpg'); /* http://template.simkors.itembridge.com/images/background/slide-1.jpg */
-	background-size: 100%;
+	background-size: cover;
+	background-position: 50% 20%;
+	background-repeat: no-repeat;
 }
+
+a, ah:hover {
+	color: #f00;
+}
+
+.main-title, .coming-soon{margin-top:20%;float:left;}
+
 .main-title {
-color:white;
-font-family: 'Space Mono', monospace;opacity:1;
+	color:white;
+	/*position: absolute;
+	top: 40%;
+	bottom: auto;
+	right: auto;*/
+	padding: 0 3rem;
 }
-#bash > .ti-cursor {color:red!important;} /*
-#bash > .ti-container {color:white!important;}
-#bash {font-family: 'Space Mono', monospace;opacity:1;} */
-
-.console {
-display: block;
-margin: auto;
-max-width: 530px;
-border-radius: 10px;
-box-shadow: rgba(0, 0, 0, 0.8) 0px 20px 70px;
-clear: both;
-overflow: hidden;
+.main-title > h1 {
+	text-shadow: 1px 1px #f00;
+	margin-bottom: .5rem;
+	font-family: inherit;
+	font-weight: 500;
+	line-height: 1.1;
+	font-size: 2.5rem;
 }
-
-.title-bar {
-    padding: 5px 0;
-    font-family: "Lucida Grande", sans-serif;
-    font-size: 0.75em;
-    text-align: center;
-    text-shadow: rgba(255, 255, 255, 0.8) 0px 1px 0px;
-    background-color: #f8f8f8;
-    background-image: -webkit-linear-gradient(top, #e8e8e8, #bcbbbc);
-    background-image: -moz-linear-gradient(top, #e8e8e8, #bcbbbc);
-    background-image: linear-gradient(top, #e8e8e8, #bcbbbc);
-    box-shadow: inset rgba(255, 255, 255, 0.7) 0px 1px 1px;
-    border-bottom: #6a6a6a 1px solid;
+.main-title > p {
+	margin-top: 0;
+	margin-bottom: 1rem;
 }
 
+.coming-soon > h2 {
+	text-shadow: 2px 2px #f00;
+	color: white;
+	text-align: center;
+	font-size: 6rem;
+}
 
+#bash > .ti-cursor {color:red!important;}
+#bash > .ti-container {font-family: 'Space Mono', monospace!important;opacity:1;}
+.btn {cursor:pointer;}
+
+/* ---- Particules ----*/
+#particles-js {position: absolute;z-index: 1;}
+#particles-js{
+  width: 100%;
+	height: 50%}
+
+	canvas{
+	  display:block;
+	  vertical-align:bottom;
+	}
+/*
+#overspace{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 2;
+}*/
 /* ---- Begin Overlay ---- */
 
 .overlay {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     top: 0;
     left: 0;
     background-color: rgb(0,0,0);
@@ -57,10 +105,10 @@ overflow: hidden;
     position: relative;
     top: 25%;
     width: 100%;
-    text-align: center;
+    text-align: left;
     margin-top: 30px;
 }
-
+/*
 .overlay a {
     padding: 8px;
     text-decoration: none;
@@ -73,7 +121,7 @@ overflow: hidden;
 .overlay a:hover, .overlay a:focus {
     color: #f1f1f1;
 }
-
+*/
 .overlay .closebtn {
     position: absolute;
     top: 20px;
@@ -81,11 +129,28 @@ overflow: hidden;
     font-size: 60px;
 }
 
+.overlay p, .overlay a {
+	font-family: 'Space Mono', monospace;
+	color: #fff;
+}
+
+.overlay a {text-decoration: underline;}
+
 @media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
+  /*.overlay a {font-size: 20px} */
   .overlay .closebtn {
     font-size: 40px;
     top: 15px;
     right: 35px;
   }
+}
+
+/* -- FOOTER -- */
+footer {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	color: #fff;
+	text-align: center;
+	width: 100%;
 }

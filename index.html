@@ -7,37 +7,63 @@
 	<meta name="description" content="Coming soon" />
 
 	<!-- STYLESHEETS -->
-	<link href="https://fonts.googleapis.com/css?family=Space+Mono|Roboto" rel="stylesheet" /> 
+	<link href="https://fonts.googleapis.com/css?family=Space+Mono|Roboto" rel="stylesheet" />
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" />
-	<link href="style.css" rel="stylesheet"> 
+	<link href="style.css" rel="stylesheet">
 
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+	<!-- SCRIPTS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
+	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script> -->
 
 </head>
 <body>
-
+	<div id="particles-js"></div>
+<div id="overspace">
 <!-- MENU -->
 <div id="myNav" class="overlay">
 	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-	<div class="overlay-content">
-fake<br />
-console<br />
-ici<br />
-
+	<div class="overlay-content"><p>
+ls<br />
+<b>stephane-manet</b><br />
+cd stephane-manet<br />
+ls<br />
+<b>Réseaux sociaux</b> <b>Codes &amp; scripts</b> <b>boulot</b><br />
+cd Réseaux sociaux<br />
+manet rs --status<br />
++------------------------------------------------+<br />
++ Facebook             |<a href="https://facebook.com/stephanemanet" target="_blank">https://facebook.com/stephanemanet</a>   +<br />
++ Twitter               |<a href="https://facebook.com/stephanemanet" target="_blank">https://facebook.com/stephanemanet</a>    +<br />
++ Instagram           |<a href="https://facebook.com/stephanemanet" target="_blank">https://facebook.com/stephanemanet</a>  +<br />
++------------------------------------------------+<br />
+cd ../Codes &amp; scripts<br />
+manet code --status
++------------------------------------------------+<br />
++ Github            |<a href="https://facebook.com/stephanemanet" target="_blank">https://facebook.com/stephanemanet</a>+<br />
++ Gitlab            |<a href="https://facebook.com/stephanemanet" target="_blank">https://facebook.com/stephanemanet</a>+<br />
++ Codepen           |<a href="https://facebook.com/stephanemanet" target="_blank">https://facebook.com/stephanemanet</a>+<br />
++------------------------------------------------<br />
+</p>
 	</div>
 </div>
 
 <!-- TITLE -->
-<div class="inner cover main-title">
-	<h1 class="cover-heading">Stéphane Manet</h1>
-	<p id="bash"></p>
-	<span class="btn btn-lg btn-secondary" onclick="openNav()">En savoir plus</span>
+<div class="col-md-6 coming-soon">
+<h2>Coming soon</h2>
 </div>
 
-<!-- Javascript librairies there -->
-<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-<script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script> 
+<!-- CONTENT -->
+<div class="col-md-6 main-title">
+	<h1 class="cover-heading">Stéphane Manet</h1>
+	<p id="bash"></p>
+	<p>Des bidouillages ont lieu derrière cette page... En attendant, je m'amuse avec particle.js et typeIt.js. Pour rester en contact, retrouvons-nous sur les réseaux sociaux.</p>
+	<span class="btn btn-lg btn-danger" onclick="openNav()">En savoir plus</span>
+</div>
+
+<!-- Particules.js librairies -->
+<script src="particles.min.js"></script>
+<script src="app.js"></script>
 
 <!-- Our local scripts there -->
 <script>
@@ -59,9 +85,10 @@ function closeNav(){document.getElementById("myNav").style.width = "0%";}
 <!-- FOOTER -->
 <footer class="mastfoot">
 <div class="inner">
-	<p><i class="fa fa-github"></i> Scripts utilisés <a href="https://github.com/alexmacarthur/typeit" target="_blank">typeIt.js</a> et <a href="" target="_blank">particules.js</a></p>
+	<p><i class="fa fa-github"></i> Scripts utilisés <a href="https://github.com/alexmacarthur/typeit" target="_blank">typeIt.js</a> et <a href="https://github.com/VincentGarreau/particles.js/" target="_blank">particles.js</a></p>
+	<p><i class="fa fa-flickr"></i> Crédits photo : <a href="https://www.flickr.com/photos/iahvector/17094885968/" target="_blank">Scorpius</a> <i class="fa fa-creative-commons"></i>
 </div>
 </footer>
-
+</div>
 </body>
 </html>
