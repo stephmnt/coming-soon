@@ -21,13 +21,17 @@
 <body>
 	<div id="particles-js"></div>
 <div id="overspace">
-<!-- MENU -->
-<div id="myNav" class="overlay">
+
+<!-- OVERLAY -->
+<div id="overlay" class="overlay">
 	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 	<div class="overlay-content">
+		<!-- MYLIFE.COM -->
 		<div class="col-md-6">
-			<p>Je m'appelle Stéphane Manet et je travaille dans le champs de la formation professionnelle. </p>
+			<p>Je m’appelle Stéphane Manet et je travaille dans le champ de la formation professionnelle. Je propose ou dispense des cours d’informatique avec une équipe de passionnés depuis plus de 5 ans.</p>
+			<p>En attendant que je développe un site internet plus détaillé, avec amour et Symfony, je vous propose de nous suivre sur les réseaux sociaux.</p>
 		</div>
+		<!-- MENU -->
 		<div class="col-md-6">
 			<ul>
 				<li> <a href="https://twitter.com/stephanemanet" target="_blank"> <i class="fa fa-twitter"></i></a> </li>
@@ -42,7 +46,7 @@
 
 <!-- TITLE -->
 <div class="col-md-6 coming-soon">
-<h2>Coming soon</h2>
+	<h2>Coming soon</h2>
 </div>
 
 <!-- CONTENT -->
@@ -61,7 +65,7 @@
 <script>
 /* -- typeIt main title configuration -- */
 $('#bash').typeIt({
-     strings: ["--formation-professionnelle", "developpement-web"],
+     strings: ["--formation-professionnelle", "--developpement-web", "--pedagogie"],
      speed: 100,
 lifeLike: true,
      autoStart: false,
@@ -70,8 +74,8 @@ breakLines: false,
 });
 
 /* -- Open/close functions for the menu -- */
-function openNav() {document.getElementById("myNav").style.width = "100%";}
-function closeNav(){document.getElementById("myNav").style.width = "0%";}
+function openNav() {document.getElementById("overlay").style.width = "100%";}
+function closeNav(){document.getElementById("overlay").style.width = "0%";}
 </script>
 
 <!-- FOOTER -->

@@ -19,11 +19,6 @@ input,select{vertical-align:middle}
 li{list-style:none}
 
 /* GLOBAL STYLES */
-
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-
-}
-
 body {
 	background:url('bg.jpg'); /* http://template.simkors.itembridge.com/images/background/slide-1.jpg */
 	background-size: cover;
@@ -32,29 +27,29 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
-	body {
-		background-size: auto;
-	}
+	body {background-size: auto;}
 }
 
-a, ah:hover {
-	color: #f00;
-}
+a, ah:hover {color: #f00;}
 
+
+/* MAINT CONTENT */
 .main-title, .coming-soon{margin-top:20%;float:left;}
 
 .main-title {
 	color:white;
 	padding: 0 3rem;
 }
+
 .main-title > h1 {
-	text-shadow: 1px 1px #f00;
+	text-shadow: 1px 1px #f00; /* leRougeQuiTache */
 	margin-bottom: .5rem;
 	font-family: inherit;
 	font-weight: 500;
 	line-height: 1.1;
 	font-size: 2.5rem;
 }
+
 .main-title > p {
 	margin-top: 0;
 	margin-bottom: 1rem;
@@ -90,8 +85,7 @@ canvas {
 }
 
 /* ---- Begin Overlay ---- */
-
-.overlay {
+#overlay {
     height: 100%;
     width: 0;
     position: fixed;
@@ -112,7 +106,7 @@ canvas {
     margin-top: 30px;
 }
 
-.overlay-content > div {margin: 0 auto} /* because of the col-md-6 here */
+.overlay-content > div {margin: 4rem auto} /* because of the col-md-6 here */
 
 .overlay-content p {
     text-align: center;
@@ -121,7 +115,7 @@ canvas {
     font-family: 'Roboto';
 	}
 
-.overlay a {
+#overlay a {
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
@@ -130,21 +124,22 @@ canvas {
     transition: 0.3s;
 }
 
-.overlay a:hover, .overlay a:focus {color: #f1f1f1;}
+#overlay a:hover, #overlay a:focus {color: #f1f1f1;}
 
-.overlay ul {
-
+#overlay ul {
+    width: 320px;
+    margin: auto;
 }
 
-.overlay li {
+#overlay li {
     float: left;
     margin: 0 auto;
     width: 64px;
 }
 
-.overlay li > a {font-size: :32px;}
+#overlay li > a {font-size: :32px;}
 
-.overlay .closebtn {
+#overlay .closebtn {
     position: absolute;
     top: 20px;
     left: 45px;
@@ -152,8 +147,7 @@ canvas {
 }
 
 @media screen and (max-height: 450px) {
-  /*.overlay a {font-size: 20px} */
-  .overlay .closebtn {
+  #overlay .closebtn {
     font-size: 40px;
     top: 15px;
     right: 35px;
@@ -171,3 +165,5 @@ footer {
 	padding-bottom: 4px;
 	margin-bottom: 1px;
 }
+
+.mastfoot p {margin: 0.2rem;}
