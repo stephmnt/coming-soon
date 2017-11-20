@@ -4,7 +4,7 @@
 
 
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
-body{line-height:1}
+body{line-height:1;font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
 nav ul{list-style:none}
 blockquote,q{quotes:none}
@@ -26,6 +26,18 @@ body {
 	background-repeat: no-repeat;
 }
 
+a {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+h1, h2 {
+	font-family: Roboto;
+	font-weight: 500;
+}
+
 @media screen and (max-width: 1200px) {
 	body {background-size: auto;}
 }
@@ -34,11 +46,23 @@ a, ah:hover {color: #f00;}
 
 
 /* MAINT CONTENT */
-.main-title, .coming-soon{margin-top:20%;float:left;}
+.main-title, .coming-soon{
+	top:40%;
+	position: absolute;
+	z-index: 2;
+	max-width: 50%;
+	width: 50%
+}
+
+@media screen and (max-width: 800px){
+	.main-title, .coming-soon{width: 100%;max-width:100%;}
+	.coming-soon{top:20%;}
+}
 
 .main-title {
 	color:white;
 	padding: 0 3rem;
+	right: 0;
 }
 
 .main-title > h1 {
@@ -69,14 +93,43 @@ a, ah:hover {color: #f00;}
 
 #bash > .ti-cursor {color:red!important;}
 #bash > .ti-container {font-family: 'Space Mono', monospace!important;opacity:1;}
-.btn {cursor:pointer;}
+
+.button {
+	color: #fff;
+	background-color: #f00; /* rougeQuiTacheToujours */
+	border-color: #d9534f;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  padding: .5rem 1rem;
+  font-size: 1rem;  -webkit-user-select: none;
+  border-radius: .25rem;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+	cursor:pointer;
+	padding: .75rem 1.5rem;
+	font-size: 1.25rem;
+	border-radius: .3rem;
+}
+
+	.button:hover {
+    color: #fff;
+    background-color: #c9302c;
+    border-color: #c12e2a;
+		text-decoration: none;
+}
 
 /* ---- Particules ----*/
 #particles-js {
 		position: absolute;
 		z-index: 1;
 	  width: 100%;
-		height: 50%
+		height: 90%
 }
 
 canvas {
@@ -101,9 +154,9 @@ canvas {
 .overlay-content {
     position: relative;
     top: 25%;
-    width: 100%;
+    width: 50%;
     text-align: left;
-    margin-top: 30px;
+    margin: 30px auto 0;
 }
 
 .overlay-content > div {margin: 4rem auto} /* because of the col-md-6 here */
@@ -167,4 +220,4 @@ footer {
 	margin-bottom: 1px;
 }
 
-.mastfoot p {margin: 0.2rem;}
+footer > p {margin: 0.2rem;}
