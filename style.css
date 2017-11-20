@@ -55,7 +55,12 @@ a, ah:hover {color: #f00;}
 }
 
 @media screen and (max-width: 800px){
-	.main-title, .coming-soon{width: 100%;max-width:100%;}
+	.main-title, .coming-soon{
+		width: 100%;
+		max-width:100%;
+		padding: 0;
+		text-align: center;
+	}
 	.coming-soon{top:20%;}
 }
 
